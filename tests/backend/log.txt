@@ -1,0 +1,59 @@
+2024-03-13 20:32:25 INFO [32Mpytest tests/backend/create_project.py::TestProjectCreate::test_project_create_with_role_model (setup)[0M
+curl -X GET 'http://admin:admin@localhost:8111/authenticationTest.html?csrf' \
+-H 'User-Agent: python-requests/2.28.2' \
+-H 'Accept-Encoding: gzip, deflate' \
+-H 'Accept: */*' \
+-H 'Connection: keep-alive' \
+-H 'Authorization: Basic YWRtaW46YWRtaW4=' \
+-d ' 
+
+2024-03-13 20:32:25 INFO [32Mpytest tests/backend/create_project.py::TestProjectCreate::test_project_create_with_role_model[0M
+curl -X POST 'http://admin:admin@localhost:8111/app/rest/projects' \
+-H 'User-Agent: python-requests/2.28.2' \
+-H 'Accept-Encoding: gzip, deflate' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'X-TC-CSRF-Token: 9b4c558f-b34a-4385-8603-8d3f7dadfc17' \
+-H 'Cookie: RecentLogin=; TCSESSIONID=57373D82C0790264D2773E020DA780DC' \
+-H 'Content-Length: 112' \
+-H 'Authorization: Basic YWRtaW46YWRtaW4=' \
+-d '{"parentProject": {"locator": "_Root"}, "name": "first", "id": "w7rjAngqR67", "copyAllAssociatedSettings": true} 
+
+2024-03-13 20:32:25 INFO [32Mpytest tests/backend/create_project.py::TestProjectCreate::test_project_create_with_role_model[0M
+curl -X GET 'http://admin:admin@localhost:8111/app/rest/projects' \
+-H 'User-Agent: python-requests/2.28.2' \
+-H 'Accept-Encoding: gzip, deflate' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'X-TC-CSRF-Token: 9b4c558f-b34a-4385-8603-8d3f7dadfc17' \
+-H 'Cookie: TCSESSIONID=57373D82C0790264D2773E020DA780DC' \
+-H 'Authorization: Basic YWRtaW46YWRtaW4=' \
+-d ' 
+
+2024-03-13 20:32:25 INFO [32Mpytest tests/backend/create_project.py::TestProjectCreate::test_project_create_with_role_model[0M
+curl -X DELETE 'http://admin:admin@localhost:8111/app/rest/projects/id:w7rjAngqR67' \
+-H 'User-Agent: python-requests/2.28.2' \
+-H 'Accept-Encoding: gzip, deflate' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'X-TC-CSRF-Token: 9b4c558f-b34a-4385-8603-8d3f7dadfc17' \
+-H 'Cookie: TCSESSIONID=57373D82C0790264D2773E020DA780DC' \
+-H 'Content-Length: 0' \
+-H 'Authorization: Basic YWRtaW46YWRtaW4=' \
+-d ' 
+
+2024-03-13 20:32:25 INFO [32Mpytest tests/backend/create_project.py::TestProjectCreate::test_project_create_with_role_model[0M
+curl -X GET 'http://admin:admin@localhost:8111/app/rest/projects' \
+-H 'User-Agent: python-requests/2.28.2' \
+-H 'Accept-Encoding: gzip, deflate' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'X-TC-CSRF-Token: 9b4c558f-b34a-4385-8603-8d3f7dadfc17' \
+-H 'Cookie: TCSESSIONID=57373D82C0790264D2773E020DA780DC' \
+-H 'Authorization: Basic YWRtaW46YWRtaW4=' \
+-d ' 
+
